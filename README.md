@@ -20,8 +20,8 @@ The only two things you need to do include: 1. Put all original textgrids into t
 
 Task 2 : Convert Splited TextGrids to Corresponding txt files
 
-When you finish task 1, you would get 3756 splited textgrids. Every splited textgrid would be perfectly aligned with its corresponding wav files (with the same name). You can check it through Praat by randomly opening one splited textgrid and the wav with the same name. 
+When you finish task 1, you would get 3756 splited textgrids. Every splited textgrid would be perfectly aligned with its corresponding wav files (with the same name). You can check it through Praat by randomly opening one splited textgrid and one wav file with its same name. 
 
-Then you can start task 2 to get all files required for MFA acoustic model training (splited wav files, their transcriptions in word level saved in txt format, a dictionary containing mapping relations between words and phonemes). The dictionary has been offered here, which was made of a given [pinyin to phoneme mapping table](https://wenet.org.cn/opencpop/resources/annotationformat/) offered by Opencpop and 19 Out-of-vocabulary (OOV) types that I appended by myself.
+Task 2 helps you get all files required for MFA acoustic model training (splited wav files, their transcriptions in the word level saved in txt format, a dictionary containing mapping relations between words and phonemes). The dictionary has been offered here, which was made of a given [pinyin to phoneme mapping table](https://wenet.org.cn/opencpop/resources/annotationformat/) offered by Opencpop and 19 Out-of-vocabulary (OOV) word types that I appended on my own.
 
 A jupyter notebook named ***split_textgrid_to_txt_extractor.ipynb*** is offered here for task 2. The function of this notebook include: 
