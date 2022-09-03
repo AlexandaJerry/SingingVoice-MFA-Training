@@ -24,6 +24,8 @@ When you finish task 1, you would get 3756 split textgrids. Every split textgrid
 
 Task 2 helps you get all files required for MFA acoustic model training (split wav files, their transcriptions in the word level saved in txt format, a dictionary containing mapping relations between words and phonemes). The dictionary has been offered here, which was made of a given [pinyin to phoneme mapping table](https://wenet.org.cn/opencpop/resources/annotationformat/) offered by Opencpop and 19 Out-of-vocabulary (OOV) word types that I appended on my own.
 
-A jupyter notebook named ***split_textgrid_to_txt_extractor.ipynb*** is offered here for task 2. The function of this notebook include: 1. Extract the third tier of textgrid (tier named “音节”) and append the symbols in to list 2. For special symbols [ SP, AP, and _ ] ,  SP and AP would be remained,  _ would be replaced by the final rhyming part of the former Chinese syllable 3. Create 3756 txt files with the same name of 3756 split textgrids. Taking the textgrid shown in the picture as an example, its corresponding txt file would contain "piao fu zai ai ai AP SP yi i pian ian ian wu nai SP AP "
+A jupyter notebook named ***split_textgrid_to_txt_extractor.ipynb*** is offered here for task 2. The function of this notebook include: 1. Extract the third tier of textgrid (tier named “音节”) and append the symbols in to list 2. For special symbols [ SP, AP, and _ ] ,  SP and AP would be remained,  _ would be replaced by the final rhyming part of the former Chinese syllable 3. Create 3756 txt files with the same name of 3756 split textgrids. 
+
+Taking the textgrid shown in the picture as an example, after we finish task 2, its corresponding txt file would be automatically built in the folder ***split-textgrid-to-txt***, with the content "piao fu zai ai ai AP SP yi i pian ian ian wu nai SP AP ".
 
 ![image-20220903154154186](https://i0.hdslb.com/bfs/album/7923271bf88ba266a33e1b1f8e5a1c259df6e3b7.png)
