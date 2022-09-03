@@ -4,7 +4,7 @@ Hello, everyone! I'm a graduate student in Shanghai who major in phonetics. I'm 
 
 2022.09.02
 
-Task 1: Split TextGrid to Sentence level
+Task 1 : Split TextGrid to Sentence level
 
 In the [Opencpop dataset](https://wenet.org.cn/opencpop/), the textgirds is given in a level of the whole song. It also offers split wav files in the sentence level, so we need to split the textgrids to the sentence level, which makes them suitable for aligning with split wav files.
 
