@@ -12,6 +12,8 @@ In the [Opencpop dataset](https://wenet.org.cn/opencpop/), the textgirds is give
 
 You need to download Praat to make ***split_textgrid_addictive_order.praat*** available to be opened. Double click ***split_textgrid_addictive_order.praat***  and Praat will automatically open itself. The only two things you need to do include: 1. Put all original textgrids into the folder ***original-textgrid*** (you can change the folder name as you wish) 2. Click the button ***"Run"*** in the pop-up window of Praat, and change the path of ***Directory_name*** (the folder contains original textgrids) and ***output_Directory_name*** (the folder you wish to store the split textgrid). 
 
+2022.09.03
+
 Task 2 : Convert Splited TextGrids to Corresponding txt files
 
 When you finish task 1, you would get 3756 splited textgrids. Every splited textgrid would be perfectly aligned with its corresponding wav files (with the same name). You can check it through Praat by randomly opening one splited textgrid and the wav with the same name. 
