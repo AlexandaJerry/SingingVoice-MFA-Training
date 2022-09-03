@@ -29,3 +29,7 @@ A jupyter notebook named ***split_textgrid_to_txt_extractor.ipynb*** is offered 
 Taking the textgrid shown in the picture as an example, after we finish task 2, its corresponding txt file would be automatically built in the folder ***split-textgrid-to-txt***, with the content "piao fu zai ai ai AP SP yi i pian ian ian wu nai SP AP ". By the way, thanks to the help of [yqzhishen](https://github.com/yqzhishen). He made me finally realize that SP refers to silence. AP refers to aspiration, and _ refers to the lengthening of final rhyming part.
 
 ![image-20220903154154186](https://i0.hdslb.com/bfs/album/7923271bf88ba266a33e1b1f8e5a1c259df6e3b7.png)
+
+Task 3 : MFA acoustic model training
+
+For the installation of MFA, I highly recommend you to install MFA in the linux system. Windows can  activate a sub-system of WSL (Windows Subsystem for Linux). My environment is Ubantu 18.04 and WSL 1.0. Besides, I highly recommend you to install MFA by following the procedures offered by Official Guidelines.
