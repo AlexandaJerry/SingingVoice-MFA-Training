@@ -4,9 +4,9 @@ Hello, everyone! I'm a graduate student in Shanghai who major in phonetics. I'm 
 
 - [SingingVoice-MFA-Training](#singingvoice-mfa-training)
         * [Task 1 : Split TextGrid to Sentence level](#task-1---split-textgrid-to-sentence-level)
-        * [Task 2 : Convert Split TextGrids to Corresponding txt files](#task-2---convert-split-textgrids-to-corresponding-txt-files)
-        * [Task 3 : MFA acoustic model training](#task-3---mfa-acoustic-model-training)
-        * [Task 4 : Evaluation of MFA acoustic model and future improvements](#task-4---evaluation-of-mfa-acoustic-model-and-future-improvements)
+            * [Task 2 : Convert Split TextGrids to Corresponding txt files](#task-2---convert-split-textgrids-to-corresponding-txt-files)
+            * [Task 3 : MFA acoustic model training](#task-3---mfa-acoustic-model-training)
+            * [Task 4 : Evaluation of MFA acoustic model and future improvements](#task-4---evaluation-of-mfa-acoustic-model-and-future-improvements)
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
