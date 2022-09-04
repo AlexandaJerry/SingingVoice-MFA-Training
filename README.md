@@ -30,6 +30,8 @@ Taking the textgrid shown in the picture as an example, after we finish task 2, 
 
 ![image-20220903154154186](https://i0.hdslb.com/bfs/album/7923271bf88ba266a33e1b1f8e5a1c259df6e3b7.png)
 
+2022.09.04
+
 Task 3 : MFA acoustic model training
 
 For the installation of MFA, I highly recommend you to install MFA in the linux system. Windows can  activate a sub-system of WSL (Windows Subsystem for Linux). My environment is Ubantu 18.04 and WSL 1.0. Besides, I highly recommend you to install MFA by following the procedures offered by Official Guidelines : 
@@ -37,16 +39,18 @@ For the installation of MFA, I highly recommend you to install MFA in the linux 
 1. MFA can be installed with Anaconda or Miniconda ([instruction here](https://montreal-forced-aligner.readthedocs.io/en/latest/installation.html)).
 
 2. After the installation of Conda, run command 
-  `conda create -n aligner -c conda-forge montreal-forced-aligner`
+    `conda create -n aligner -c conda-forge montreal-forced-aligner`
 
 3. Activate new environment with the command
-  `conda activate aligner`
+    `conda activate aligner`
 
 4. Check whether MFA has been successfully installed
 
    `mfa version` or `mfa model download acoustic english_us_arpa`
 
+To help you be familiar with the installation and training of MFA, I create a jupyter notebook ***MFA_for_Colab.ipynb***. You can open it with google colab and run MFA online by click the button one by one. 
 
+To train an acoustic model of MFA, you need to prepare three things (the split wav files, their corresponding transcriptions in the word level saved in txt format, a dictionary that stores the mapping relations between words and phonemes). Here, the split wav files and their corresponding transcriptions are stored in the folder ***my_corpus***, and the dictionary storing mapping relations is ***my_dictionary.txt***.
 
 ![image-20220904114557596](https://i0.hdslb.com/bfs/album/782e040ed2196cd38bd13abfb0b975b21f2eadd5.png)
 
