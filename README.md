@@ -34,7 +34,7 @@ Task 3 : MFA acoustic model training
 
 For the installation of MFA, I highly recommend you to install MFA in the linux system. Windows can  activate a sub-system of WSL (Windows Subsystem for Linux). My environment is Ubantu 18.04 and WSL 1.0. Besides, I highly recommend you to install MFA by following the procedures offered by Official Guidelines : 
 
-1. MFA can be installed with Anaconda or Miniconda. 
+1. MFA can be installed with Anaconda or Miniconda ([instruction here](https://montreal-forced-aligner.readthedocs.io/en/latest/installation.html)).
 
 2. After the installation of Conda, run command 
   `conda create -n aligner -c conda-forge montreal-forced-aligner`
@@ -44,5 +44,5 @@ For the installation of MFA, I highly recommend you to install MFA in the linux 
 
 4. Check whether MFA has been successfully installed
 
-   `mfa version`
+   `mfa version` or `mfa model download acoustic english_us_arpa`
 
