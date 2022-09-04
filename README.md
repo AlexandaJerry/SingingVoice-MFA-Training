@@ -46,3 +46,7 @@ For the installation of MFA, I highly recommend you to install MFA in the linux 
 
    `mfa version` or `mfa model download acoustic english_us_arpa`
 
+
+
+![image-20220904114557596](https://i0.hdslb.com/bfs/album/782e040ed2196cd38bd13abfb0b975b21f2eadd5.png)
+
