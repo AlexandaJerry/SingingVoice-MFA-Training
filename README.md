@@ -48,9 +48,13 @@ For the installation of MFA, I highly recommend you to install MFA in the linux 
 
    `mfa version` or `mfa model download acoustic english_us_arpa`
 
-To help you be familiar with the installation and training of MFA, I create a jupyter notebook ***MFA_for_Colab.ipynb***. You can open it with google colab and run MFA online by click the button one by one. 
+To help you be familiar with the process of installation and model training of MFA, I create a jupyter notebook ***MFA_for_Colab.ipynb***. You can open it with google colab and run MFA online by click the button one by one. 
 
 To train an acoustic model of MFA, you need to prepare three things (the split wav files, their corresponding transcriptions in the word level saved in txt format, a dictionary that stores the mapping relations between words and phonemes). Here, the split wav files and their corresponding transcriptions are stored in the folder ***my_corpus***, and the dictionary storing mapping relations is ***my_dictionary.txt***.
+
+Then, you can use the command  `mfa train --clean /content/SingingVoice-MFA-Training/my_corpus /content/SingingVoice-MFA-Training/my_dictionary.txt /content/SingingVoice-MFA-Training/acoustic-model-training/opencpop_acoustic_model.zip /content/SingingVoice-MFA-Training/acoustic-model-training`. 
+
+You should pay attention to these four paths here. The first path is where you store the wav files and their transcriptions. The second path is the path of your dictionary. The third path is where you'd like to store the newly trained acoustic model (you can change its name with xxxxx.zip as you wish). The last path is where you'd like to store the newly produced aligned textgrids. `mfa train --clean <corpus path> <dictionary path> <acoustic model path> <aligned textgrids path>` 
 
 ![image-20220904114557596](https://i0.hdslb.com/bfs/album/782e040ed2196cd38bd13abfb0b975b21f2eadd5.png)
 
