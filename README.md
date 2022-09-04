@@ -1,3 +1,15 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**
+
+- [SingingVoice-MFA-Training](#singingvoice-mfa-training)
+        - [Task 1 : Split TextGrid to Sentence level](#task-1--split-textgrid-to-sentence-level)
+        - [Task 2 : Convert Split TextGrids to Corresponding txt files](#task-2--convert-split-textgrids-to-corresponding-txt-files)
+        - [Task 3 : MFA acoustic model training](#task-3--mfa-acoustic-model-training)
+        - [Task 4 : Evaluation of MFA acoustic model and future improvements](#task-4--evaluation-of-mfa-acoustic-model-and-future-improvements)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # SingingVoice-MFA-Training
 
 Hello, everyone! I'm a graduate student in Shanghai who major in phonetics. I'm highly grateful to my college and my institution (Institute of Linguistics, IOL) for providing me with interdisciplinary knowledge for language studies. My institution offers me a chance to learn about traditional linguistic knowledge and frontiers of speech science. Special thanks to my supervisor Mr. Zhu, who constantly encourages me to pursuit my dream.
