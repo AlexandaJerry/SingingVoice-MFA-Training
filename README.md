@@ -2,9 +2,11 @@
 
 Hello, everyone! I'm a graduate student in Shanghai who major in phonetics. I'm highly grateful to my college and my institution (Institute of Linguistics, IOL) for providing me with interdisciplinary knowledge for language studies. My institution offers me a chance to learn about traditional linguistic knowledge and frontiers of speech science. Special thanks to my supervisor Mr. Zhu, who constantly encourages me to pursuit my dream.
 
+[TOC]
+
 2022.09.02
 
-Task 1 : Split TextGrid to Sentence level
+##### Task 1 : Split TextGrid to Sentence level
 
 In the [Opencpop dataset](https://wenet.org.cn/opencpop/), the textgirds is given in a level of the whole song. It also offers split wav files in the sentence level, so we need to split the textgrids to the sentence level, which makes them suitable for aligning with split wav files.
 
@@ -18,7 +20,7 @@ The only two things you need to do include: 1. Put all original textgrids into t
 
 2022.09.03
 
-Task 2 : Convert Split TextGrids to Corresponding txt files
+##### Task 2 : Convert Split TextGrids to Corresponding txt files
 
 When you finish task 1, you would get 3756 split textgrids. Every split textgrid would be perfectly aligned with its corresponding wav files (with the same name). You can check it through Praat by randomly opening one split textgrid and one wav file with its same name. 
 
@@ -32,7 +34,7 @@ Taking the textgrid shown in the picture as an example, after we finish task 2, 
 
 2022.09.04
 
-Task 3 : MFA acoustic model training
+##### Task 3 : MFA acoustic model training
 
 For the installation of MFA, I highly recommend you to install MFA in the linux system. Windows can  activate a sub-system of WSL (Windows Subsystem for Linux). My environment is Ubantu 18.04 and WSL 1.0. Besides, I highly recommend you to install MFA by following the procedures offered by Official Guidelines : 
 
