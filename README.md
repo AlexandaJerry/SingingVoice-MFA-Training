@@ -58,5 +58,9 @@ Then, you can use the command  `mfa train --clean /content/SingingVoice-MFA-Trai
 
 You should pay attention to these four paths here. The first path is where you store the wav files and their transcriptions. The second path is the path of your dictionary. The third path is where you'd like to store the newly trained acoustic model (you can change its name with xxxxx.zip as you wish). The last path is where you'd like to store the newly produced aligned textgrids. `mfa train --clean <corpus path> <dictionary path> <acoustic model path> <aligned textgrids path>` 
 
+##### Task 4 : Evaluation of MFA acoustic model and future improvements
+
+
+
 ![image-20220904114557596](https://i0.hdslb.com/bfs/album/782e040ed2196cd38bd13abfb0b975b21f2eadd5.png)
 
