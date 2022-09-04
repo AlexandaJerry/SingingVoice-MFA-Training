@@ -2,6 +2,9 @@
 
 Hello, everyone! I'm a graduate student in Shanghai who major in phonetics. I'm highly grateful to my college and my institution (Institute of Linguistics, IOL) for providing me with interdisciplinary knowledge for language studies. My institution offers me a chance to learn about traditional linguistic knowledge and frontiers of speech science. Special thanks to my supervisor Mr. Zhu, who constantly encourages me to pursuit my dream.
 
+<!-- START doctoc -->
+<!-- END doctoc -->
+
 2022.09.02
 
 ##### Task 1 : Split TextGrid to Sentence level
