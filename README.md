@@ -77,6 +77,8 @@ After 18000 seconds (approximately 5 hours), we finally get out trained acoustic
 
 Well, ***there is good news and bad news here***! The good news is that the boundaries of consonants are almost perfect. For every syllable in tier "words", its left boundary is highly approximate to the hand labeling. So the starting point and the interval of consonants are perfect. The bad news is that the interval of rhyming part of Chinese syllables (韵母) is too short, which might need further lengthening by hand. As for the cause of such problem, I tend to attribute this to the phoneme system and dictionary of mapping relation, but I'm not so sure about it until a new phoneme system is applied to our training.
 
+2022.09.05
+
 ##### Task 5 : My own opinions about the phoneme system and dictionary
 
 From the labelling format of Opencpop, the syllables are separated into two parts: consonants (声母) and the rhyming part (韵母). For example, `zhuang` would be separated to `zh` and `uang`. `niang` would be separated to `n` and `iang`. Before I start to express my own opinion, the first and most important thing I'd like to clarify here is that ***I'm not going to criticize any design of the phoneme system.*** 
@@ -100,8 +102,10 @@ Considering the fact that I'm not a specialist in Mandarin syllable, so I'll rec
 
 As for ***phoneme-notation-symbols (音位记载符号)***, there are at least two types of symbols: pinyin-based-notation-symbols and IPA-based-notation-symbols. Pinyin tends to be in the superficial level, as it is related to Orthography. [IPA](https://en.m.wikipedia.org/wiki/International_Phonetic_Alphabet) tends to be in the deep level. A phone would be marked as a new phone when it distinguishes meanings of different words in a language. Here I may take [MFA 2.0 pinyin dictionary](https://github.com/MontrealCorpusTools/mfa-models/releases/tag/dictionary-mandarin_pinyin-v2.0.0) and [MFA 2.0 kind-of-IPA-based dictionary (MFA phone set)](https://github.com/MontrealCorpusTools/mfa-models/releases/tag/dictionary-mandarin_china_mfa-v2.0.0a) as an example. 
 
-In MFA 2.0 pinyin dictionary, chuan4 shao1 would be mapped as chuan4 ch ua4 n shao1 sh ao1
-In MFA 2.0 MFA phone set, 串烧 would be mapped as 1	0.0	0.0	0.0	ʈʂʰ w a˥˩ n ʂ au˥˥
+| Comparison of two notation symbols in different dictionaries |
+| ------------------------------------------------------------ |
+| In MFA 2.0 pinyin dictionary, chuan4 shao1 would be mapped as chuan4 ch ua4 n shao1 sh ao1 |
+| In MFA 2.0 MFA phone set, 串烧 would be mapped as 1	0.0	0.0	0.0	ʈʂʰ w a˥˩ n ʂ au˥˥ |
 
 ##### Task 6 : How to use the pretrained model for aligning
 
