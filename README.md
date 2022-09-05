@@ -59,17 +59,23 @@ For the installation of MFA, I highly recommend you to install MFA in the linux 
 
    `mfa version` or `mfa model download acoustic english_us_arpa`
 
-To help you be familiar with the process of installation and model training of MFA, I create a jupyter notebook ***MFA_for_Colab.ipynb***. You can open it with google colab and run MFA online by click the button one by one. 
+To help you be familiar with the process of installation and model training of MFA, I create a jupyter notebook ***MFA_for_Colab.ipynb***. You can open it with google colab and run MFA online by click the button one by one. It contained instructions on ***MFA model downloading, training and aligning***.
 
 To train an acoustic model of MFA, you need to prepare three things (the split wav files, their corresponding transcriptions in the word level saved in txt format, a dictionary that stores the mapping relations between words and phonemes). Here, the split wav files and their corresponding transcriptions are stored in the folder ***my_corpus***, and the dictionary storing mapping relations is ***my_dictionary.txt***.
 
 Then, you can use the command  `mfa train --clean /content/SingingVoice-MFA-Training/my_corpus /content/SingingVoice-MFA-Training/my_dictionary.txt /content/SingingVoice-MFA-Training/acoustic-model-training/opencpop_acoustic_model.zip /content/SingingVoice-MFA-Training/acoustic-model-training` to train your acoustic model for singing voice auto-aligning. 
 
-You should pay attention to these four paths here. The first path is where you store the wav files and their transcriptions. The second path is the path of your dictionary. The third path is where you'd like to store the newly trained acoustic model (you can change its name with xxxxx.zip as you wish). The last path is where you'd like to store the newly produced aligned textgrids. `mfa train --clean <corpus path> <dictionary path> <acoustic model path> <aligned textgrids path>` 
+You should ***pay attention to these four paths*** here. The first path is where you store the wav files and their transcriptions. The second path is the path of your dictionary. The third path is where you'd like to store the newly trained acoustic model (you can change its name with xxxxx.zip as you wish). The last path is where you'd like to store the newly produced aligned textgrids. `mfa train --clean <corpus path> <dictionary path> <acoustic model path> <aligned textgrids path>` 
 
 ##### Task 4 : Evaluation of MFA acoustic model and future improvements
 
+After 18000 seconds (approximately 5 hours), we finally get out trained acoustic model for singing voice aligning. I have uploaded this model ***opencpop_acoustic_model.zip***  and its corresponding dictionary ***my_dictionary.txt*** in the repository and the release. Here is the performance of one example textgrid. The upper one is what we get with newly trained MFA acoustic model. The lower one is its original texgrid labeled by hand.
 
+Well, ***there is good news and bad news here***! The good news is that the boundaries of consonants are almost perfect. For every syllable in tier "words", its left boundary is highly approximate to the hand labeling. So the starting point and the interval of consonants are perfect. The bad news is that the interval of rhyming part of Chinese syllables (韵母) is too short, which might need further lengthening by hand. As for the cause of such problem, I tend to attribute this to the phoneme system and dictionary of mapping relation, but I'm not so sure about it until a new phoneme system is applied to our training.
+
+From the labelling format of Opencpop, the syllables are separated into two parts: consonants (声母) and the rhyming part (韵母). For example, `zhuang` would be separated to `zh` and `uang`. `niang` would be separated to `n` and `iang`. Before I start to express my own opinion, the first and most important thing I'd like to clarify here is that ***I'm not going to criticize any design of the phoneme system.*** Actually, every proposal for the phoneme system has their own strengths and limitations. 
+
+All in all, the only two differences between different proposals for the phoneme system and dictionary is ***the Degree of Segmentation (切分程度)*** and ***phoneme-notation-symbols(音位记载符号)***. You may also call it granularity, grain size or particle size (粒度). 
 
 ![image-20220904114557596](https://i0.hdslb.com/bfs/album/782e040ed2196cd38bd13abfb0b975b21f2eadd5.png)
 
