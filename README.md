@@ -67,7 +67,7 @@ Then, you can use the command  `mfa train --clean /content/SingingVoice-MFA-Trai
 
 You should ***pay attention to these four paths*** here. The first path is where you store the wav files and their transcriptions. The second path is the path of your dictionary. The third path is where you'd like to store the newly trained acoustic model (you can change its name with xxxxx.zip as you wish). The last path is where you'd like to store the newly produced aligned textgrids. `mfa train --clean <corpus path> <dictionary path> <acoustic model path> <aligned textgrids path>` 
 
-##### Task 4 : Evaluation of MFA acoustic model and future improvements
+##### Task 4 : Performance of MFA acoustic model (Version 1.0.0)
 
 After 18000 seconds (approximately 5 hours), we finally get out trained acoustic model for singing voice aligning. I have uploaded this model ***opencpop_acoustic_model.zip***  and its corresponding dictionary ***my_dictionary.txt*** in the repository and the release. Here is the performance of one example textgrid. The upper one is what we get with newly trained MFA acoustic model. The lower one is its original texgrid labeled by hand.
 
@@ -75,23 +75,37 @@ After 18000 seconds (approximately 5 hours), we finally get out trained acoustic
 
 Well, ***there is good news and bad news here***! The good news is that the boundaries of consonants are almost perfect. For every syllable in tier "words", its left boundary is highly approximate to the hand labeling. So the starting point and the interval of consonants are perfect. The bad news is that the interval of rhyming part of Chinese syllables (韵母) is too short, which might need further lengthening by hand. As for the cause of such problem, I tend to attribute this to the phoneme system and dictionary of mapping relation, but I'm not so sure about it until a new phoneme system is applied to our training.
 
+##### Task 5 : My own opinions about the phoneme system and dictionary
+
 From the labelling format of Opencpop, the syllables are separated into two parts: consonants (声母) and the rhyming part (韵母). For example, `zhuang` would be separated to `zh` and `uang`. `niang` would be separated to `n` and `iang`. Before I start to express my own opinion, the first and most important thing I'd like to clarify here is that ***I'm not going to criticize any design of the phoneme system.*** 
 
-Actually, every proposal for the phoneme system has their own strengths and limitations, and all in all, the only two differences between different proposals for the phoneme system and dictionary is ***the Degree of Segmentation (切分程度)*** and ***phoneme-notation-symbols(音位记载符号)***. 
+Actually, every proposal for the phoneme system has their own strengths and limitations, and all in all, the only two differences between different proposals for the phoneme system and dictionary is ***the Degree of Segmentation (切分程度)*** and ***phoneme-notation-symbols (音位记载符号)***. 
 
-As for the Degree of Segmentation , you can also call it granularity, grain size or particle size (粒度), although such terms are not so perfectly matched here. The mapping relation of words and phonemes in Opencpop dataset belongs to the type of ***coarse grain (粗粒度)***. As shown in ***my_dictionary.txt***, long syllables are separated into two parts. The MFA 1.0 dictionary of pinyin, which I uploaded as ***mandarin_pinyin.txt***, belongs to the type of ***intermediate grain (中等粒度)***. For example, `zhuang` would be separated into `zh`, `ua`, and `ng`. `niang` would be separated into `n`, `ia`, and `ng`. The monophthong, diphthong, and triphthong were not further separated (无论是韵头、韵腹、还是元音韵尾，凡是元音部分都没有被切割开). Only the nasal condas (鼻韵尾) were separated from syllables. 
+As for ***the Degree of Segmentation*** , you can also call it granularity, grain size or particle size (粒度), although such terms are not so perfectly matched here. The mapping relation of words and phonemes in Opencpop dataset belongs to the type of ***coarse grain (粗粒度)***. As shown in ***my_dictionary.txt***, long syllables are separated into two parts. The MFA 1.0 dictionary of pinyin, which I uploaded as ***mandarin_pinyin.txt***, belongs to the type of ***intermediate grain (中等粒度)***. For example, `zhuang` would be separated into `zh`, `ua`, and `ng`. `niang` would be separated into `n`, `ia`, and `ng`. The monophthong, diphthong, and triphthong were not further separated (无论是韵头、韵腹、还是元音韵尾，凡是元音部分都没有被切割开). Only the nasal condas (鼻韵尾) were separated from syllables. 
 
 In fact, we could further divide the rhythming part of Chinese syllables in a method of ***fine grain (细粒度)***. That is, we could further separate the monophthong, diphthong, triphthong and conda of Chinese syllables into smaller parts. For example：
 
-三合元音切为韵头、韵腹、元音韵尾。二合元音切割为韵腹韵尾。
-
-lun：声母l，韵头u，韵腹e，韵尾n
-wen：零声母，韵头u，韵腹e，韵尾n
-you：零声母，韵头i，韵腹o，韵尾u
-yuan：零声母，韵头ü，韵腹a，韵尾n
-tai：声母t，无韵头，韵腹a，韵尾i
-xiu：声母x，韵头i，韵腹o，韵尾u
-yong：零声母，韵头i，韵腹o，韵尾ng
+| 韵母切为韵头、韵腹、元音韵尾、鼻音韵尾 |
+| -------------------------------------- |
+| wen：零声母，韵头u，韵腹e，韵尾n       |
+| you：零声母，韵头i，韵腹o，韵尾u       |
+| yuan：零声母，韵头ü，韵腹a，韵尾n      |
+| tai：声母t，无韵头，韵腹a，韵尾i       |
+| xiu：声母x，韵头i，韵腹o，韵尾u        |
+| yong：零声母，韵头i，韵腹o，韵尾ng     |
 
 Considering the fact that I'm not a specialist in Mandarin syllable, so I'll recommend several materials here for you, if you are interested in Mandarin syllabic structures. (Note: My translation is not proper here) 1. [Mandarin syllabic structures](https://zh.wikipedia.org/wiki/%E6%BC%A2%E8%AA%9E%E9%9F%B3%E7%AF%80%E7%B5%90%E6%A7%8B) 2. [Onset of Mandarin (声母)](https://zh.wikipedia.org/wiki/%E5%A3%B0%E6%AF%8D) 3. [Nucleus and conda of Mandarin (韵母)](https://zh.wikipedia.org/wiki/%E9%9F%B5%E6%AF%8D) 4. [Hànyǔ Pīnyīn](https://zh.wikipedia.org/wiki/%E6%B1%89%E8%AF%AD%E6%8B%BC%E9%9F%B3#%E6%B1%89%E8%AF%AD%E6%8B%BC%E9%9F%B3%E5%8C%96) 5. [All possible Hànyǔ Pīnyīn and their transcriptions](https://zh.wikipedia.org/wiki/%E7%8F%BE%E4%BB%A3%E6%A8%99%E6%BA%96%E6%BC%A2%E8%AA%9E%E6%8B%BC%E9%9F%B3%E5%B0%8D%E7%85%A7%E8%A1%A8).
+
+As for ***phoneme-notation-symbols (音位记载符号)***, there are at least two types of symbols: pinyin-based-notation-symbols and IPA-based-notation-symbols. Pinyin tends to be in the superficial level, as it is related to Orthography. [IPA](https://en.m.wikipedia.org/wiki/International_Phonetic_Alphabet) tends to be in the deep level. A phone would be marked as a new phone when it distinguishes meanings of different words in a language. Here I may take [MFA 2.0 pinyin dictionary](https://github.com/MontrealCorpusTools/mfa-models/releases/tag/dictionary-mandarin_pinyin-v2.0.0) and [MFA 2.0 kind-of-IPA-based dictionary (MFA phone set)](https://github.com/MontrealCorpusTools/mfa-models/releases/tag/dictionary-mandarin_china_mfa-v2.0.0a) as an example. 
+
+In MFA 2.0 pinyin dictionary, chuan4 shao1 would be mapped as chuan4 ch ua4 n shao1 sh ao1
+In MFA 2.0 MFA phone set, 串烧 would be mapped as 1	0.0	0.0	0.0	ʈʂʰ w a˥˩ n ʂ au˥˥
+
+##### Task 6 : How to use the pretrained model for aligning
+
+Download [my_dictionary.txt](https://github.com/AlexandaJerry/SingingVoice-MFA-Training/blob/main/my_dictionary.txt) and [opencpop_acoustic_model.zip](https://github.com/AlexandaJerry/SingingVoice-MFA-Training/blob/main/opencpop_acoustic_model.zip) and use command `mfa align <corpus path> <dictionary path> <acoustic model path> <aligned textgrids path>`. The first path is where you store the wav files and their transcriptions. The second path is the path of your dictionary. The third path is where you'd like to store the newly trained acoustic model (you can change its name with xxxxx.zip as you wish). The last path is where you'd like to store the newly produced aligned textgrids.
+
+We also put an example for such command in the [MFA_for_Colab.ipynb](https://github.com/AlexandaJerry/SingingVoice-MFA-Training/blob/main/MFA_for_Colab.ipynb) , with the command `mfa align /content/SingingVoice-MFA-Training/my_corpus /content/SingingVoice-MFA-Training/my_dictionary.txt /content/SingingVoice-MFA-Training/opencpop_acoustic_model.zip /content/SingingVoice-MFA-Training/acoustic-model-applying`
+
+In the future, I might improve the performance of such acoustic model through designing new phoneme systems and adding more singing voice into the training dataset. I'm now starting my new semester. Hope that I could finish these tough works in the future. Best regards!
 
