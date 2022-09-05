@@ -9,7 +9,9 @@ Hello, everyone! I'm a graduate student in Shanghai who major in phonetics. I'm 
 - [Task 1 : Split TextGrid to Sentence level](#task-1--split-textgrid-to-sentence-level)
 - [Task 2 : Convert Split TextGrids to Corresponding txt files](#task-2--convert-split-textgrids-to-corresponding-txt-files)
 - [Task 3 : MFA acoustic model training](#task-3--mfa-acoustic-model-training)
-- [Task 4 : Evaluation of MFA acoustic model and future improvements](#task-4--evaluation-of-mfa-acoustic-model-and-future-improvements)
+- [Task 4 : Performance of MFA acoustic model (Version 1.0.0)](#task-4--performance-of-mfa-acoustic-model-version-100)
+- [Task 5 : My own opinions about the phoneme system and dictionary](#task-5--my-own-opinions-about-the-phoneme-system-and-dictionary)
+- [Task 6 : How to use the pretrained model for aligning](#task-6--how-to-use-the-pretrained-model-for-aligning)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
