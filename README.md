@@ -71,6 +71,8 @@ You should ***pay attention to these four paths*** here. The first path is where
 
 After 18000 seconds (approximately 5 hours), we finally get out trained acoustic model for singing voice aligning. I have uploaded this model ***opencpop_acoustic_model.zip***  and its corresponding dictionary ***my_dictionary.txt*** in the repository and the release. Here is the performance of one example textgrid. The upper one is what we get with newly trained MFA acoustic model. The lower one is its original texgrid labeled by hand.
 
+![image-20220904114557596](https://i0.hdslb.com/bfs/album/782e040ed2196cd38bd13abfb0b975b21f2eadd5.png)
+
 Well, ***there is good news and bad news here***! The good news is that the boundaries of consonants are almost perfect. For every syllable in tier "words", its left boundary is highly approximate to the hand labeling. So the starting point and the interval of consonants are perfect. The bad news is that the interval of rhyming part of Chinese syllables (韵母) is too short, which might need further lengthening by hand. As for the cause of such problem, I tend to attribute this to the phoneme system and dictionary of mapping relation, but I'm not so sure about it until a new phoneme system is applied to our training.
 
 From the labelling format of Opencpop, the syllables are separated into two parts: consonants (声母) and the rhyming part (韵母). For example, `zhuang` would be separated to `zh` and `uang`. `niang` would be separated to `n` and `iang`. Before I start to express my own opinion, the first and most important thing I'd like to clarify here is that ***I'm not going to criticize any design of the phoneme system.*** 
@@ -79,9 +81,17 @@ Actually, every proposal for the phoneme system has their own strengths and limi
 
 As for the Degree of Segmentation , you can also call it granularity, grain size or particle size (粒度), although such terms are not so perfectly matched here. The mapping relation of words and phonemes in Opencpop dataset belongs to the type of ***coarse grain (粗粒度)***. As shown in ***my_dictionary.txt***, long syllables are separated into two parts. The MFA 1.0 dictionary of pinyin, which I uploaded as ***mandarin_pinyin.txt***, belongs to the type of ***intermediate grain (中等粒度)***. For example, `zhuang` would be separated into `zh`, `ua`, and `ng`. `niang` would be separated into `n`, `ia`, and `ng`. The monophthong, diphthong, and triphthong were not further separated (无论是韵头、韵腹、还是元音韵尾，凡是元音部分都没有被切割开). Only the nasal condas (鼻韵尾) were separated from syllables. 
 
-In fact, 
+In fact, we could further divide the rhythming part of Chinese syllables in a method of ***fine grain (细粒度)***. That is, we could further separate the monophthong, diphthong, triphthong and conda of Chinese syllables into smaller parts. For example：
 
-Considering the fact that I'm not a specialist in Mandarin syllable, so I'll recommend several materials here for you, if you are interested in Mandarin syllabic structures. （Note: The translation of mine is not proper here.) 1. [Mandarin syllabic structures](https://zh.wikipedia.org/wiki/%E6%BC%A2%E8%AA%9E%E9%9F%B3%E7%AF%80%E7%B5%90%E6%A7%8B) 2. [Onset of Mandarin (声母)](https://zh.wikipedia.org/wiki/%E5%A3%B0%E6%AF%8D) 3. [Nucleus and conda of Mandarin (韵母)](https://zh.wikipedia.org/wiki/%E9%9F%B5%E6%AF%8D) 4. [Hànyǔ Pīnyīn](https://zh.wikipedia.org/wiki/%E6%B1%89%E8%AF%AD%E6%8B%BC%E9%9F%B3#%E6%B1%89%E8%AF%AD%E6%8B%BC%E9%9F%B3%E5%8C%96) 5. [All possible Hànyǔ Pīnyīn and their transcriptions](https://zh.wikipedia.org/wiki/%E7%8F%BE%E4%BB%A3%E6%A8%99%E6%BA%96%E6%BC%A2%E8%AA%9E%E6%8B%BC%E9%9F%B3%E5%B0%8D%E7%85%A7%E8%A1%A8).
+三合元音切为韵头、韵腹、元音韵尾。二合元音切割为韵腹韵尾。
 
-![image-20220904114557596](https://i0.hdslb.com/bfs/album/782e040ed2196cd38bd13abfb0b975b21f2eadd5.png)
+lun：声母l，韵头u，韵腹e，韵尾n
+wen：零声母，韵头u，韵腹e，韵尾n
+you：零声母，韵头i，韵腹o，韵尾u
+yuan：零声母，韵头ü，韵腹a，韵尾n
+tai：声母t，无韵头，韵腹a，韵尾i
+xiu：声母x，韵头i，韵腹o，韵尾u
+yong：零声母，韵头i，韵腹o，韵尾ng
+
+Considering the fact that I'm not a specialist in Mandarin syllable, so I'll recommend several materials here for you, if you are interested in Mandarin syllabic structures. (Note: My translation is not proper here) 1. [Mandarin syllabic structures](https://zh.wikipedia.org/wiki/%E6%BC%A2%E8%AA%9E%E9%9F%B3%E7%AF%80%E7%B5%90%E6%A7%8B) 2. [Onset of Mandarin (声母)](https://zh.wikipedia.org/wiki/%E5%A3%B0%E6%AF%8D) 3. [Nucleus and conda of Mandarin (韵母)](https://zh.wikipedia.org/wiki/%E9%9F%B5%E6%AF%8D) 4. [Hànyǔ Pīnyīn](https://zh.wikipedia.org/wiki/%E6%B1%89%E8%AF%AD%E6%8B%BC%E9%9F%B3#%E6%B1%89%E8%AF%AD%E6%8B%BC%E9%9F%B3%E5%8C%96) 5. [All possible Hànyǔ Pīnyīn and their transcriptions](https://zh.wikipedia.org/wiki/%E7%8F%BE%E4%BB%A3%E6%A8%99%E6%BA%96%E6%BC%A2%E8%AA%9E%E6%8B%BC%E9%9F%B3%E5%B0%8D%E7%85%A7%E8%A1%A8).
 
