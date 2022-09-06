@@ -1,0 +1,118 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0 
+xmax = 2.839349999999996 
+tiers? <exists> 
+size = 7 
+item []: 
+    item [1]:
+        class = "IntervalTier" 
+        name = "句子" 
+        xmin = 0 
+        xmax = 2.839349999999996 
+        intervals: size = 1 
+        intervals [1]:
+            xmin = 0 
+            xmax = 2.839349999999996 
+            text = "使然" 
+    item [2]:
+        class = "IntervalTier" 
+        name = "汉字" 
+        xmin = 0 
+        xmax = 2.839349999999996 
+        intervals: size = 2 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.7501400000000018 
+            text = "使" 
+        intervals [2]:
+            xmin = 0.7501400000000018 
+            xmax = 2.839349999999996 
+            text = "然" 
+    item [3]:
+        class = "IntervalTier" 
+        name = "音节" 
+        xmin = 0 
+        xmax = 2.839349999999996 
+        intervals: size = 2 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.7501400000000018 
+            text = "shi" 
+        intervals [2]:
+            xmin = 0.7501400000000018 
+            xmax = 2.839349999999996 
+            text = "ran" 
+    item [4]:
+        class = "IntervalTier" 
+        name = "音高" 
+        xmin = 0 
+        xmax = 2.839349999999996 
+        intervals: size = 2 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.7501400000000018 
+            text = "F#3" 
+        intervals [2]:
+            xmin = 0.7501400000000018 
+            xmax = 2.839349999999996 
+            text = "A3" 
+    item [5]:
+        class = "IntervalTier" 
+        name = "音长" 
+        xmin = 0 
+        xmax = 2.839349999999996 
+        intervals: size = 2 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.7501400000000018 
+            text = "0.750140" 
+        intervals [2]:
+            xmin = 0.7501400000000018 
+            xmax = 2.839349999999996 
+            text = "2.089210" 
+    item [6]:
+        class = "IntervalTier" 
+        name = "音素" 
+        xmin = 0 
+        xmax = 2.839349999999996 
+        intervals: size = 4 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.29075000000000273 
+            text = "sh" 
+        intervals [2]:
+            xmin = 0.29075000000000273 
+            xmax = 0.7501400000000018 
+            text = "i" 
+        intervals [3]:
+            xmin = 0.7501400000000018 
+            xmax = 0.9657600000000031 
+            text = "r" 
+        intervals [4]:
+            xmin = 0.9657600000000031 
+            xmax = 2.839349999999996 
+            text = "an" 
+    item [7]:
+        class = "IntervalTier" 
+        name = "连音" 
+        xmin = 0 
+        xmax = 2.839349999999996 
+        intervals: size = 4 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.29075000000000273 
+            text = "0" 
+        intervals [2]:
+            xmin = 0.29075000000000273 
+            xmax = 0.7501400000000018 
+            text = "0" 
+        intervals [3]:
+            xmin = 0.7501400000000018 
+            xmax = 0.9657600000000031 
+            text = "0" 
+        intervals [4]:
+            xmin = 0.9657600000000031 
+            xmax = 2.839349999999996 
+            text = "0" 

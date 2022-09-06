@@ -1,0 +1,142 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0 
+xmax = 3.0949799999999925 
+tiers? <exists> 
+size = 7 
+item []: 
+    item [1]:
+        class = "IntervalTier" 
+        name = "句子" 
+        xmin = 0 
+        xmax = 3.0949799999999925 
+        intervals: size = 1 
+        intervals [1]:
+            xmin = 0 
+            xmax = 3.0949799999999925 
+            text = "无解" 
+    item [2]:
+        class = "IntervalTier" 
+        name = "汉字" 
+        xmin = 0 
+        xmax = 3.0949799999999925 
+        intervals: size = 3 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.3527999999999878 
+            text = "无" 
+        intervals [2]:
+            xmin = 0.3527999999999878 
+            xmax = 0.5949099999999987 
+            text = "_" 
+        intervals [3]:
+            xmin = 0.5949099999999987 
+            xmax = 3.0949799999999925 
+            text = "解" 
+    item [3]:
+        class = "IntervalTier" 
+        name = "音节" 
+        xmin = 0 
+        xmax = 3.0949799999999925 
+        intervals: size = 3 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.3527999999999878 
+            text = "wu" 
+        intervals [2]:
+            xmin = 0.3527999999999878 
+            xmax = 0.5949099999999987 
+            text = "_" 
+        intervals [3]:
+            xmin = 0.5949099999999987 
+            xmax = 3.0949799999999925 
+            text = "jie" 
+    item [4]:
+        class = "IntervalTier" 
+        name = "音高" 
+        xmin = 0 
+        xmax = 3.0949799999999925 
+        intervals: size = 3 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.3527999999999878 
+            text = "F#4" 
+        intervals [2]:
+            xmin = 0.3527999999999878 
+            xmax = 0.5949099999999987 
+            text = "E4" 
+        intervals [3]:
+            xmin = 0.5949099999999987 
+            xmax = 3.0949799999999925 
+            text = "G#4" 
+    item [5]:
+        class = "IntervalTier" 
+        name = "音长" 
+        xmin = 0 
+        xmax = 3.0949799999999925 
+        intervals: size = 3 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.3527999999999878 
+            text = "0.352800" 
+        intervals [2]:
+            xmin = 0.3527999999999878 
+            xmax = 0.5949099999999987 
+            text = "0.242110" 
+        intervals [3]:
+            xmin = 0.5949099999999987 
+            xmax = 3.0949799999999925 
+            text = "2.500070" 
+    item [6]:
+        class = "IntervalTier" 
+        name = "音素" 
+        xmin = 0 
+        xmax = 3.0949799999999925 
+        intervals: size = 5 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.04898999999998921 
+            text = "w" 
+        intervals [2]:
+            xmin = 0.04898999999998921 
+            xmax = 0.3527999999999878 
+            text = "u" 
+        intervals [3]:
+            xmin = 0.3527999999999878 
+            xmax = 0.5949099999999987 
+            text = "u" 
+        intervals [4]:
+            xmin = 0.5949099999999987 
+            xmax = 0.8035399999999981 
+            text = "j" 
+        intervals [5]:
+            xmin = 0.8035399999999981 
+            xmax = 3.0949799999999925 
+            text = "ie" 
+    item [7]:
+        class = "IntervalTier" 
+        name = "连音" 
+        xmin = 0 
+        xmax = 3.0949799999999925 
+        intervals: size = 5 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.04898999999998921 
+            text = "0" 
+        intervals [2]:
+            xmin = 0.04898999999998921 
+            xmax = 0.3527999999999878 
+            text = "0" 
+        intervals [3]:
+            xmin = 0.3527999999999878 
+            xmax = 0.5949099999999987 
+            text = "1" 
+        intervals [4]:
+            xmin = 0.5949099999999987 
+            xmax = 0.8035399999999981 
+            text = "0" 
+        intervals [5]:
+            xmin = 0.8035399999999981 
+            xmax = 3.0949799999999925 
+            text = "0" 

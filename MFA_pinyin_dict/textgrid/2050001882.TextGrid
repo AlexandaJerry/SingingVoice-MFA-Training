@@ -1,0 +1,366 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0 
+xmax = 3.5148300000000035 
+tiers? <exists> 
+size = 7 
+item []: 
+    item [1]:
+        class = "IntervalTier" 
+        name = "句子" 
+        xmin = 0 
+        xmax = 3.5148300000000035 
+        intervals: size = 1 
+        intervals [1]:
+            xmin = 0 
+            xmax = 3.5148300000000035 
+            text = "你没办法靠近" 
+    item [2]:
+        class = "IntervalTier" 
+        name = "汉字" 
+        xmin = 0 
+        xmax = 3.5148300000000035 
+        intervals: size = 11 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.3933400000000091 
+            text = "你" 
+        intervals [2]:
+            xmin = 0.3933400000000091 
+            xmax = 0.728580000000008 
+            text = "没" 
+        intervals [3]:
+            xmin = 0.728580000000008 
+            xmax = 0.8420300000000083 
+            text = "SP" 
+        intervals [4]:
+            xmin = 0.8420300000000083 
+            xmax = 0.9363600000000076 
+            text = "办" 
+        intervals [5]:
+            xmin = 0.9363600000000076 
+            xmax = 1.1874700000000047 
+            text = "_" 
+        intervals [6]:
+            xmin = 1.1874700000000047 
+            xmax = 1.7515199999999993 
+            text = "法" 
+        intervals [7]:
+            xmin = 1.7515199999999993 
+            xmax = 1.848399999999998 
+            text = "SP" 
+        intervals [8]:
+            xmin = 1.848399999999998 
+            xmax = 2.223160000000007 
+            text = "靠" 
+        intervals [9]:
+            xmin = 2.223160000000007 
+            xmax = 3.090900000000005 
+            text = "近" 
+        intervals [10]:
+            xmin = 3.090900000000005 
+            xmax = 3.1553600000000017 
+            text = "SP" 
+        intervals [11]:
+            xmin = 3.1553600000000017 
+            xmax = 3.5148300000000035 
+            text = "AP" 
+    item [3]:
+        class = "IntervalTier" 
+        name = "音节" 
+        xmin = 0 
+        xmax = 3.5148300000000035 
+        intervals: size = 11 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.3933400000000091 
+            text = "ni" 
+        intervals [2]:
+            xmin = 0.3933400000000091 
+            xmax = 0.728580000000008 
+            text = "mei" 
+        intervals [3]:
+            xmin = 0.728580000000008 
+            xmax = 0.8420300000000083 
+            text = "SP" 
+        intervals [4]:
+            xmin = 0.8420300000000083 
+            xmax = 0.9363600000000076 
+            text = "ban" 
+        intervals [5]:
+            xmin = 0.9363600000000076 
+            xmax = 1.1874700000000047 
+            text = "_" 
+        intervals [6]:
+            xmin = 1.1874700000000047 
+            xmax = 1.7515199999999993 
+            text = "fa" 
+        intervals [7]:
+            xmin = 1.7515199999999993 
+            xmax = 1.848399999999998 
+            text = "SP" 
+        intervals [8]:
+            xmin = 1.848399999999998 
+            xmax = 2.223160000000007 
+            text = "kao" 
+        intervals [9]:
+            xmin = 2.223160000000007 
+            xmax = 3.090900000000005 
+            text = "jin" 
+        intervals [10]:
+            xmin = 3.090900000000005 
+            xmax = 3.1553600000000017 
+            text = "SP" 
+        intervals [11]:
+            xmin = 3.1553600000000017 
+            xmax = 3.5148300000000035 
+            text = "AP" 
+    item [4]:
+        class = "IntervalTier" 
+        name = "音高" 
+        xmin = 0 
+        xmax = 3.5148300000000035 
+        intervals: size = 11 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.3933400000000091 
+            text = "D#4" 
+        intervals [2]:
+            xmin = 0.3933400000000091 
+            xmax = 0.728580000000008 
+            text = "F4" 
+        intervals [3]:
+            xmin = 0.728580000000008 
+            xmax = 0.8420300000000083 
+            text = "rest" 
+        intervals [4]:
+            xmin = 0.8420300000000083 
+            xmax = 0.9363600000000076 
+            text = "G#4" 
+        intervals [5]:
+            xmin = 0.9363600000000076 
+            xmax = 1.1874700000000047 
+            text = "A#4" 
+        intervals [6]:
+            xmin = 1.1874700000000047 
+            xmax = 1.7515199999999993 
+            text = "G#4" 
+        intervals [7]:
+            xmin = 1.7515199999999993 
+            xmax = 1.848399999999998 
+            text = "rest" 
+        intervals [8]:
+            xmin = 1.848399999999998 
+            xmax = 2.223160000000007 
+            text = "C#4" 
+        intervals [9]:
+            xmin = 2.223160000000007 
+            xmax = 3.090900000000005 
+            text = "D#4" 
+        intervals [10]:
+            xmin = 3.090900000000005 
+            xmax = 3.1553600000000017 
+            text = "rest" 
+        intervals [11]:
+            xmin = 3.1553600000000017 
+            xmax = 3.5148300000000035 
+            text = "rest" 
+    item [5]:
+        class = "IntervalTier" 
+        name = "音长" 
+        xmin = 0 
+        xmax = 3.5148300000000035 
+        intervals: size = 11 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.3933400000000091 
+            text = "0.393340" 
+        intervals [2]:
+            xmin = 0.3933400000000091 
+            xmax = 0.728580000000008 
+            text = "0.335240" 
+        intervals [3]:
+            xmin = 0.728580000000008 
+            xmax = 0.8420300000000083 
+            text = "0.113450" 
+        intervals [4]:
+            xmin = 0.8420300000000083 
+            xmax = 0.9363600000000076 
+            text = "0.094330" 
+        intervals [5]:
+            xmin = 0.9363600000000076 
+            xmax = 1.1874700000000047 
+            text = "0.251110" 
+        intervals [6]:
+            xmin = 1.1874700000000047 
+            xmax = 1.7515199999999993 
+            text = "0.564050" 
+        intervals [7]:
+            xmin = 1.7515199999999993 
+            xmax = 1.848399999999998 
+            text = "0.096880" 
+        intervals [8]:
+            xmin = 1.848399999999998 
+            xmax = 2.223160000000007 
+            text = "0.374760" 
+        intervals [9]:
+            xmin = 2.223160000000007 
+            xmax = 3.090900000000005 
+            text = "0.867740" 
+        intervals [10]:
+            xmin = 3.090900000000005 
+            xmax = 3.1553600000000017 
+            text = "0.064460" 
+        intervals [11]:
+            xmin = 3.1553600000000017 
+            xmax = 3.5148300000000035 
+            text = "0.359470" 
+    item [6]:
+        class = "IntervalTier" 
+        name = "音素" 
+        xmin = 0 
+        xmax = 3.5148300000000035 
+        intervals: size = 17 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.13519999999999754 
+            text = "n" 
+        intervals [2]:
+            xmin = 0.13519999999999754 
+            xmax = 0.3933400000000091 
+            text = "i" 
+        intervals [3]:
+            xmin = 0.3933400000000091 
+            xmax = 0.496610000000004 
+            text = "m" 
+        intervals [4]:
+            xmin = 0.496610000000004 
+            xmax = 0.728580000000008 
+            text = "ei" 
+        intervals [5]:
+            xmin = 0.728580000000008 
+            xmax = 0.8420300000000083 
+            text = "SP" 
+        intervals [6]:
+            xmin = 0.8420300000000083 
+            xmax = 0.873500000000007 
+            text = "b" 
+        intervals [7]:
+            xmin = 0.873500000000007 
+            xmax = 0.9363600000000076 
+            text = "an" 
+        intervals [8]:
+            xmin = 0.9363600000000076 
+            xmax = 1.1874700000000047 
+            text = "an" 
+        intervals [9]:
+            xmin = 1.1874700000000047 
+            xmax = 1.3859000000000066 
+            text = "f" 
+        intervals [10]:
+            xmin = 1.3859000000000066 
+            xmax = 1.7515199999999993 
+            text = "a" 
+        intervals [11]:
+            xmin = 1.7515199999999993 
+            xmax = 1.848399999999998 
+            text = "SP" 
+        intervals [12]:
+            xmin = 1.848399999999998 
+            xmax = 1.9642400000000038 
+            text = "k" 
+        intervals [13]:
+            xmin = 1.9642400000000038 
+            xmax = 2.223160000000007 
+            text = "ao" 
+        intervals [14]:
+            xmin = 2.223160000000007 
+            xmax = 2.3696900000000056 
+            text = "j" 
+        intervals [15]:
+            xmin = 2.3696900000000056 
+            xmax = 3.090900000000005 
+            text = "in" 
+        intervals [16]:
+            xmin = 3.090900000000005 
+            xmax = 3.1553600000000017 
+            text = "SP" 
+        intervals [17]:
+            xmin = 3.1553600000000017 
+            xmax = 3.5148300000000035 
+            text = "AP" 
+    item [7]:
+        class = "IntervalTier" 
+        name = "连音" 
+        xmin = 0 
+        xmax = 3.5148300000000035 
+        intervals: size = 17 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.13519999999999754 
+            text = "0" 
+        intervals [2]:
+            xmin = 0.13519999999999754 
+            xmax = 0.3933400000000091 
+            text = "0" 
+        intervals [3]:
+            xmin = 0.3933400000000091 
+            xmax = 0.496610000000004 
+            text = "0" 
+        intervals [4]:
+            xmin = 0.496610000000004 
+            xmax = 0.728580000000008 
+            text = "0" 
+        intervals [5]:
+            xmin = 0.728580000000008 
+            xmax = 0.8420300000000083 
+            text = "0" 
+        intervals [6]:
+            xmin = 0.8420300000000083 
+            xmax = 0.873500000000007 
+            text = "0" 
+        intervals [7]:
+            xmin = 0.873500000000007 
+            xmax = 0.9363600000000076 
+            text = "0" 
+        intervals [8]:
+            xmin = 0.9363600000000076 
+            xmax = 1.1874700000000047 
+            text = "1" 
+        intervals [9]:
+            xmin = 1.1874700000000047 
+            xmax = 1.3859000000000066 
+            text = "0" 
+        intervals [10]:
+            xmin = 1.3859000000000066 
+            xmax = 1.7515199999999993 
+            text = "0" 
+        intervals [11]:
+            xmin = 1.7515199999999993 
+            xmax = 1.848399999999998 
+            text = "0" 
+        intervals [12]:
+            xmin = 1.848399999999998 
+            xmax = 1.9642400000000038 
+            text = "0" 
+        intervals [13]:
+            xmin = 1.9642400000000038 
+            xmax = 2.223160000000007 
+            text = "0" 
+        intervals [14]:
+            xmin = 2.223160000000007 
+            xmax = 2.3696900000000056 
+            text = "0" 
+        intervals [15]:
+            xmin = 2.3696900000000056 
+            xmax = 3.090900000000005 
+            text = "0" 
+        intervals [16]:
+            xmin = 3.090900000000005 
+            xmax = 3.1553600000000017 
+            text = "0" 
+        intervals [17]:
+            xmin = 3.1553600000000017 
+            xmax = 3.5148300000000035 
+            text = "0" 
