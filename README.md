@@ -85,7 +85,7 @@ From the labelling format of Opencpop, the syllables are separated into two part
 
 Actually, every proposal for the phoneme system has their own strengths and limitations, and all in all, the only two differences between different proposals for the phoneme system and dictionary is ***the Degree of Segmentation (切分程度)*** and ***phoneme-notation-symbols (音位记载符号)***. 
 
-As for ***the Degree of Segmentation*** , you can also call it granularity, grain size or particle size (粒度), although such terms are not so perfectly matched here. The mapping relation of words and phonemes in Opencpop dataset belongs to the type of ***coarse grain (粗粒度)***. As shown in ***my_dictionary.txt***, long syllables are separated into two parts. The MFA 1.0 dictionary of pinyin, which I uploaded as ***mandarin_pinyin.txt***, belongs to the type of ***intermediate grain (中等粒度)***. For example, `zhuang` would be separated into `zh`, `ua`, and `ng`. `niang` would be separated into `n`, `ia`, and `ng`. The monophthong, diphthong, and triphthong were not further separated (无论是韵头、韵腹、还是元音韵尾，凡是元音部分都没有被切割开). Only the nasal condas (鼻韵尾) were separated from syllables. 
+As for ***the Degree of Segmentation***, you can also call it granularity, grain size or particle size (粒度), although such terms are not so perfectly matched here. The mapping relation of words and phonemes in Opencpop dataset belongs to the type of ***coarse grain (粗粒度)***. As shown in ***my_dictionary.txt***, long syllables are separated into two parts. The MFA 1.0 dictionary of pinyin, which I uploaded as ***mandarin_pinyin.txt***, belongs to the type of ***intermediate grain (中等粒度)***. For example, `zhuang` would be separated into `zh`, `ua`, and `ng`. `niang` would be separated into `n`, `ia`, and `ng`. The monophthong, diphthong, and triphthong were not further separated (无论是韵头、韵腹、还是元音韵尾，凡是元音部分都没有被切割开). Only the nasal condas (鼻韵尾) were separated from syllables. 
 
 In fact, we could further divide the rhythming part of Chinese syllables in a method of ***fine grain (细粒度)***. That is, we could further separate the monophthong, diphthong, triphthong and conda of Chinese syllables into smaller parts. For example：
 
@@ -115,3 +115,16 @@ We also put an example for such command in the [MFA_for_Colab.ipynb](https://git
 
 In the future, I might improve the performance of such acoustic model through designing new phoneme systems and adding more singing voice into the training dataset. I'm now starting my new semester. Hope that I could finish these tough works in the future. Best regards!
 
+##### Task 7 : Test of new phoneme system and mapping relation (MFA acoustic model version 2.0.0)
+
+In the previous part, I have shown my concerns that the Degree of Segmentation (切分程度) might influence the performance of MFA acoustic model. That is because the phoneme system of coarse grain (粗粒度) may reduce the average elements that one phoneme could get for training. For example:
+
+| Chinese Syllables |            Rhythming part as a whole            |         Separated Rhythming Part         |
+| :---------------: | :---------------------------------------------: | :--------------------------------------: |
+|       biao        |                      b+iau                      |                 b+i+a+u                  |
+|       kuai        |                      k+uai                      |                 k+u+a+i                  |
+|        kuo        |                      k+uo                       |                  k+u+o                   |
+|        qiu        |                      q+iou                      |                 q+i+o+u                  |
+|    Total Count    | b(1), k(2), q(1), iau(1), uai(1), uo(1), iou(1) | b(1), k(2), q(1), i(3), u(4), a(2), o(2) |
+
+So I made a new folder here named ***MFA_pinyin_dict***, which contains the simplified MFA 2.0 pinyin dictionary without tones. Only the nasal condas (鼻韵尾) and onset (声母) were separated from syllables. For example, `zhuang` would be separated into `zh`, `ua`, and `ng`. `niang` would be separated into `n`, `ia`, and `ng`. The monophthong, diphthong, and triphthong were not further separated. From the performance of new MFA acoustic model, we could know the relationship between the accuracy of auto-aligning (自动标注准度) and the particle size of phoneme system (音素系统粒度).
