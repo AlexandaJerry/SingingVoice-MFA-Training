@@ -12,6 +12,7 @@ Hello, everyone! I'm a graduate student in Shanghai who major in phonetics. I'm 
 - [Task 4 : Performance of MFA acoustic model (Version 1.0.0)](#task-4--performance-of-mfa-acoustic-model-version-100)
 - [Task 5 : My own opinions about the phoneme system and dictionary](#task-5--my-own-opinions-about-the-phoneme-system-and-dictionary)
 - [Task 6 : How to use the pretrained model for aligning](#task-6--how-to-use-the-pretrained-model-for-aligning)
+- [Task 7 : Test of new phoneme system and mapping relation (MFA acoustic model version 2.0.0)](#task-7--test-of-new-phoneme-system-and-mapping-relation-mfa-acoustic-model-version-200)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
