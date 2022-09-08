@@ -129,3 +129,7 @@ In the previous part, I have shown my concerns that the Degree of Segmentation (
 |    Total Count    | b(1), k(2), q(1), iau(1), uai(1), uo(1), iou(1) | b(1), k(2), q(1), i(3), u(4), a(2), o(2) |
 
 So I made a new folder here named ***MFA_pinyin_dict***, which contains the simplified MFA 2.0 pinyin dictionary without tones. Only the nasal condas (鼻韵尾) and onset (声母) were separated from syllables. For example, `zhuang` would be separated into `zh`, `ua`, and `ng`. `niang` would be separated into `n`, `ia`, and `ng`. The monophthong, diphthong, and triphthong were not further separated. From the performance of new MFA acoustic model, we could know the relationship between the accuracy of auto-aligning (自动标注准度) and the particle size of phoneme system (音素系统粒度).
+
+In the past few days, I also made a new phoneme system based on IPA transcription of Chinese syllables.  So there are three versions of MFA acoustic models and dictionary: IPA, MFA pinyin and Opencpop. The following picture shows different performances of acoustic models. The upper one of IPA is better.
+
+![image-20220909002047522](https://i0.hdslb.com/bfs/album/e43dae1ffdcb169f9bdace505d3666f74f2f32c2.png)
