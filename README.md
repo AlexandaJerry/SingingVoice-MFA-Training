@@ -6,13 +6,15 @@ Hello, everyone! I'm a graduate student in Shanghai who major in phonetics. I'm 
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**
 
-- [Task 1 : Split TextGrid to Sentence level](#task-1--split-textgrid-to-sentence-level)
-- [Task 2 : Convert Split TextGrids to Corresponding txt files](#task-2--convert-split-textgrids-to-corresponding-txt-files)
-- [Task 3 : MFA acoustic model training](#task-3--mfa-acoustic-model-training)
-- [Task 4 : Performance of MFA acoustic model (Version 1.0.0)](#task-4--performance-of-mfa-acoustic-model-version-100)
-- [Task 5 : My own opinions about the phoneme system and dictionary](#task-5--my-own-opinions-about-the-phoneme-system-and-dictionary)
-- [Task 6 : How to use the pretrained model for aligning](#task-6--how-to-use-the-pretrained-model-for-aligning)
-- [Task 7 : Test of new phoneme system and mapping relation (MFA acoustic model version 2.0.0)](#task-7--test-of-new-phoneme-system-and-mapping-relation-mfa-acoustic-model-version-200)
+- [Singing Voice MFA Acoustic Model Training](#singing-voice-mfa-acoustic-model-training)
+  - [Task 1 : Split TextGrid to Sentence level](#task-1--split-textgrid-to-sentence-level)
+  - [Task 2 : Convert Split TextGrids to Corresponding txt files](#task-2--convert-split-textgrids-to-corresponding-txt-files)
+  - [Task 3 : MFA acoustic model training](#task-3--mfa-acoustic-model-training)
+  - [Task 4 : Performance of MFA acoustic model (Version 1.0.0)](#task-4--performance-of-mfa-acoustic-model-version-100)
+  - [Task 5 : My own opinions about the phoneme system and dictionary](#task-5--my-own-opinions-about-the-phoneme-system-and-dictionary)
+  - [Task 6 : How to use the pretrained model for aligning](#task-6--how-to-use-the-pretrained-model-for-aligning)
+  - [Task 7 : Test of new phoneme system (MFA acoustic model version 2.0.0 and 3.0.0)](#task-7--test-of-new-phoneme-system-mfa-acoustic-model-version-200-and-300)
+- [Design of New Mandarin-Syllable-to-phoneme System](#design-of-new-mandarin-syllable-to-phoneme-system)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
