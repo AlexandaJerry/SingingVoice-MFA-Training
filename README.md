@@ -1,4 +1,4 @@
-**SingingVoice-MFA-Training**
+**SingingVoice-MFA-Training and Design of New Mandarin-Syllable-to-phoneme System**
 
 Hello, everyone! I'm a graduate student in Shanghai who major in phonetics. I'm highly grateful to my college and my institution (Institute of Linguistics, IOL) for providing me with interdisciplinary knowledge for language studies. My institution offers me a chance to learn about traditional linguistic knowledge and frontiers of speech science. Special thanks to my supervisor Mr. Zhu, who constantly encourages me to pursuit my dream.
 
@@ -6,17 +6,21 @@ Hello, everyone! I'm a graduate student in Shanghai who major in phonetics. I'm 
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**
 
-- [Task 1 : Split TextGrid to Sentence level](#task-1--split-textgrid-to-sentence-level)
-- [Task 2 : Convert Split TextGrids to Corresponding txt files](#task-2--convert-split-textgrids-to-corresponding-txt-files)
-- [Task 3 : MFA acoustic model training](#task-3--mfa-acoustic-model-training)
-- [Task 4 : Performance of MFA acoustic model (Version 1.0.0)](#task-4--performance-of-mfa-acoustic-model-version-100)
-- [Task 5 : My own opinions about the phoneme system and dictionary](#task-5--my-own-opinions-about-the-phoneme-system-and-dictionary)
-- [Task 6 : How to use the pretrained model for aligning](#task-6--how-to-use-the-pretrained-model-for-aligning)
-- [Task 7 : Test of new phoneme system and mapping relation (MFA acoustic model version 2.0.0)](#task-7--test-of-new-phoneme-system-and-mapping-relation-mfa-acoustic-model-version-200)
+- [Singing Voice MFA Acoustic Model Training](#singing-voice-mfa-acoustic-model-training)
+  - [Task 1 : Split TextGrid to Sentence level](#task-1--split-textgrid-to-sentence-level)
+  - [Task 2 : Convert Split TextGrids to Corresponding txt files](#task-2--convert-split-textgrids-to-corresponding-txt-files)
+  - [Task 3 : MFA acoustic model training](#task-3--mfa-acoustic-model-training)
+  - [Task 4 : Performance of MFA acoustic model (Version 1.0.0)](#task-4--performance-of-mfa-acoustic-model-version-100)
+  - [Task 5 : My own opinions about the phoneme system and dictionary](#task-5--my-own-opinions-about-the-phoneme-system-and-dictionary)
+  - [Task 6 : How to use the pretrained model for aligning](#task-6--how-to-use-the-pretrained-model-for-aligning)
+  - [Task 7 : Test of new phoneme system (MFA acoustic model version 2.0.0 and 3.0.0)](#task-7--test-of-new-phoneme-system-mfa-acoustic-model-version-200-and-300)
+- [Design of New Mandarin-Syllable-to-phoneme System](#design-of-new-mandarin-syllable-to-phoneme-system)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 2022.09.02
+
+#### Singing Voice MFA Acoustic Model Training
 
 ##### Task 1 : Split TextGrid to Sentence level
 
@@ -116,7 +120,7 @@ We also put an example for such command in the [MFA_for_Colab.ipynb](https://git
 
 In the future, I might improve the performance of such acoustic model through designing new phoneme systems and adding more singing voice into the training dataset. I'm now starting my new semester. Hope that I could finish these tough works in the future. Best regards!
 
-##### Task 7 : Test of new phoneme system and mapping relation (MFA acoustic model version 2.0.0)
+##### Task 7 : Test of new phoneme system (MFA acoustic model version 2.0.0 and 3.0.0)
 
 In the previous part, I have shown my concerns that the Degree of Segmentation (切分程度) might influence the performance of MFA acoustic model. That is because the phoneme system of coarse grain (粗粒度) may reduce the average elements that one phoneme could get for training. For example:
 
@@ -130,6 +134,18 @@ In the previous part, I have shown my concerns that the Degree of Segmentation (
 
 So I made a new folder here named ***MFA_pinyin_dict***, which contains the simplified MFA 2.0 pinyin dictionary without tones. Only the nasal condas (鼻韵尾) and onset (声母) were separated from syllables. For example, `zhuang` would be separated into `zh`, `ua`, and `ng`. `niang` would be separated into `n`, `ia`, and `ng`. The monophthong, diphthong, and triphthong were not further separated. From the performance of new MFA acoustic model, we could know the relationship between the accuracy of auto-aligning (自动标注准度) and the particle size of phoneme system (音素系统粒度).
 
-In the past few days, I also made a new phoneme system based on IPA transcription of Chinese syllables.  So there are three versions of MFA acoustic models and dictionary: IPA, MFA pinyin and Opencpop. The following picture shows different performances of acoustic models. The upper one of IPA is better.
+In the past few days, I also made a new phoneme system based on IPA transcription of Chinese syllables.  So there are three versions of MFA acoustic models and dictionary: IPA, MFA pinyin and Opencpop. The following picture shows different performances of acoustic models. MFA acoustic model 3.0.0, which is the upper one based on fully separated IPA transcription, is best among all these three models. MFA acoustic model 2.0.0 is in the middle, which is based on MFA 2.0 pinyin dictionary. 
 
 ![image-20220909002047522](https://i0.hdslb.com/bfs/album/e43dae1ffdcb169f9bdace505d3666f74f2f32c2.png)
+
+#### Design of New Mandarin-Syllable-to-phoneme System
+
+基于SV家XSAMPA词典和IPA国际音标重构的全新版本词典上线！
+该词典较为全面覆盖了汉语拼音音节的各种可能组合
+而且IPA基本贴近拼音符号所以非常易于学习和适应
+长韵母的切分标准(统一在介音处切分为介音+韵母韵尾)
+切分粒度在尽可能细分的前提下保持在了较精细粒度
+后续会在规模更大的opensinger数据库中进行模型训练
+切分方案和设计思路我会在后续时间内及时更新在下方
+
+祝好！预祝新的MFA模型自动标注准度再提升！
