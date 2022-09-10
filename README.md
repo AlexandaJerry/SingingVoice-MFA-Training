@@ -148,9 +148,8 @@ In the past few days, I also made a new phoneme system based on IPA transcriptio
 后续会在规模更大的opensinger数据库中进行模型训练
 切分方案和设计思路我会在后续时间内及时更新在下方
 
-祝好！预祝新的MFA模型自动标注准度再提升！
-
 韵母部分按照韵尾分为三个部分：开尾韵，元音尾韵，鼻尾韵；三者的处理方式为：开韵尾不进行切分，元音尾韵切介音，鼻尾韵切介音。此外，i细分为了三类：z c s后的i，zh ch sh r后的i，其余位置的i；声母部分均被转化为对应的、无争议的国际音标。
 
 ![image-20220910110347440](https://i0.hdslb.com/bfs/album/85b0613aed7b1bcebbd2c9dc6b278f9dbfeeba22.png)
 
+祝好！预祝新的MFA模型自动标注准度再提升！
