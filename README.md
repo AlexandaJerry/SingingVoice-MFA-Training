@@ -1,6 +1,6 @@
 **SingingVoice-MFA-Training and Design of New Mandarin-Syllable-to-phoneme System**
 
-Hello, everyone! I'm a graduate student in Shanghai who major in phonetics. I'm highly grateful to my college and my institution (Institute of Linguistics, IOL) for providing me with interdisciplinary knowledge for language studies. My institution offers me a chance to learn about traditional linguistic knowledge and frontiers of speech science. Special thanks to my supervisor Mr. Zhu, who constantly encourages me to pursuit my dream.
+Hello, everyone! I'm on one. I knows nothing.
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
@@ -140,20 +140,3 @@ In the past few days, I also made a new phoneme system based on IPA transcriptio
 
 #### Design of New Mandarin-Syllable-to-phoneme System
 
-基于SV家XSAMPA词典和IPA国际音标重构的全新版本词典上线！该词典较为全面覆盖了汉语拼音音节的各种可能组合，而且IPA基本贴近拼音符号所以非常易于学习和适应。长韵母的切分标准(统一在介音处切分为介音+韵母韵尾)，切分粒度在尽可能细分的前提下保持在了较精细粒度。后续会在规模更大的opensinger数据库中进行模型训练，切分方案和设计思路我会在后续时间内及时更新在下方。
-
-韵母部分按照韵尾分为三个部分：开尾韵，元音尾韵，鼻尾韵；三者的处理方式为：开韵尾不进行切分，元音尾韵切介音，鼻尾韵切介音。此外，i细分为了三类：z c s后的i，zh ch sh r后的i，其余位置的i；声母部分均被转化为对应的、无争议的国际音标。
-
-![image-20220910154240242](https://i0.hdslb.com/bfs/album/c6b6773c3dc6b47e8f89bb8b861540bdba89509b.png)
-
-祝好！预祝新的MFA模型自动标注准度再提升！
-
-2022.09.14
-
-今晚上海下了好大的雨，我跟我女朋友只有一把伞。出了图书馆的大门，我看到外面路灯下的雨，被风吹起一阵阵的水雾。我跟她说我遇到点情况，她跟我说先去忙就好，图书馆的灯打在她的身上，她就站在我的旁边等着我。后来雨实在太大，她便打着伞揽着我走回宿舍，我说她是大女子主义，然后我看向她的脸和正在揽着我肩膀的手，我忽然想起：我究竟是为了什么而忙碌。我似乎这两周从早到晚忙碌着更改一份又一份的音素表，改着一个又一个的音素词典，忽略了身旁这位陪伴我多年的意中人，而她却是从无所求的跟着我，花在她身上的片刻时间，她总是温和而又领情的记着。
-
-如果我是为了方便别人而忙碌着，那么谁又曾片刻方便过我。如果我希望节约别人的标注功夫，那么谁又曾帮我省过功夫。别人是谁，别人从不是我，我什么都没有，也什么都没图过。我从没有收到过鲜花和掌声，从没有听到过肯定的话，从来只有攻讦和批评。那么我便要问了，为何当时被问起谁能做此事时，无人举手，可是当我举起手后，却有人提起弓箭，我只看到自己四处挨批，像只被人赶来赶去的过街老鼠。我做出的成果就像立起的靶子，做的越多靶子越大，反而更好瞄准。好像不是多劳多得，更像是多劳多责。我忽然发现什么都没做的人好像无懈可击，确实是这样，他们完全立于不败之地了，连靶子都没有，他们可怎么输。
-
-还有虚心接受意见、批评只为更好这种道德话术，我只觉得一愣，看向我身边多日待机的电脑，和屏幕上打开着的维基、知乎、SV家词典。我不敢在SV家词典上大动，我只敢大拆小补不敢大改标音，确实是我的罪过，我为了省时而偷懒，我该死。维基百科俩词条里的标音甚至都不一样，unt版和李徐版的不一样，SV家词典里有部分又是独一样，诸位音韵爱好者又有自己的喜好，我该听谁的呢。那opencpop一刀切声韵母是不是要被骂死呢？既然听一方就要挨四方的骂，那我如何才能讨所有人的好呢？（我本身是最喜欢unt版的）答案很简单，我索性什么ABCDE方案直接别选，啥也不选就永远都不会错了。
-
-——记于“梅花”到来之夜
