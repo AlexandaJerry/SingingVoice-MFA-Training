@@ -14,6 +14,7 @@ Hello, everyone! I'm a graduate student in Shanghai who major in phonetics. I'm 
   - [Task 5 : My own opinions about the phoneme system and dictionary](#task-5--my-own-opinions-about-the-phoneme-system-and-dictionary)
   - [Task 6 : How to use the pretrained model for aligning](#task-6--how-to-use-the-pretrained-model-for-aligning)
   - [Task 7 : Test of new phoneme system (MFA acoustic model version 2.0.0 and 3.0.0)](#task-7--test-of-new-phoneme-system-mfa-acoustic-model-version-200-and-300)
+- [Singing Voice Auto-annotation based on MFA and Praat](#singing-voice-auto-annotation-based-on-mfa-and-praat)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
