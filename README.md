@@ -136,3 +136,8 @@ So I made a new folder here named ***MFA_pinyin_dict***, which contains the simp
 In the past few days, I also made a new phoneme system based on IPA transcription of Chinese syllables.  So there are three versions of MFA acoustic models and dictionary: IPA, MFA pinyin and Opencpop. The following picture shows different performances of acoustic models. MFA acoustic model 3.0.0, which is the upper one based on fully separated IPA transcription, is best among all these three models. MFA acoustic model 2.0.0 is in the middle, which is based on MFA 2.0 pinyin dictionary. 
 
 ![image-20220909002047522](https://i0.hdslb.com/bfs/album/e43dae1ffdcb169f9bdace505d3666f74f2f32c2.png)
+
+#### Singing Voice Auto-annotation based on MFA and Praat
+
+Please check it in  [AlexandaJerry/SingingVoice-Auto-Alignment-Revised: revised version of the workflow of auto annotation (github.com)](https://github.com/AlexandaJerry/SingingVoice-Auto-Alignment-Revised) . Considering the fact that there are too many folders in current repository, I make a new repository to store my ideas on how to auto-annotate singing voice with the combination of MFA and Praat. I haven't finished its tutorial and instruction, but the project has been proved to be feasible.
+
